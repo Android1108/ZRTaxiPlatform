@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_refresh_recycler_view" />
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.IndexBar
+        android:id="@+id/aty_select_region_recycler_index_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        app:letterColor="@color/orange1"
+        app:letterSize="@dimen/text_size_little" />
+
+</FrameLayout>

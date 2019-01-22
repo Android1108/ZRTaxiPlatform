@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/layout_margin"
+    android:paddingLeft="@dimen/layout_margin_tiny"
+    android:paddingRight="@dimen/layout_margin_tiny"
+    android:paddingTop="@dimen/layout_margin">
+
+    <TextView
+        android:id="@+id/item_query_illegal_text_car_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black80"
+        android:textSize="@dimen/text_size_medium" />
+
+    <TextView
+        android:id="@+id/item_query_illegal_text_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:textColor="@color/gray40"
+        android:textSize="@dimen/text_size_little" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:background="@color/gray10" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:orientation="horizontal">
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+            android:id="@+id/item_query_illegal_vtv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray40"
+            android:textSize="@dimen/text_size_little"
+            app:leftText="违章时间: "
+            app:leftTextColor="@color/gray40"
+            app:leftTextSize="@dimen/text_size_little" />
+
+        <TextView
+            android:id="@+id/item_query_illegal_text_company"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:textColor="@color/gray40"
+            android:textSize="@dimen/text_size_little" />
+
+    </LinearLayout>
+
+</LinearLayout>

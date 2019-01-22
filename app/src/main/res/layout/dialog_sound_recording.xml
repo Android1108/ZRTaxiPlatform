@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_sound_recording_text_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_tiny"
+        android:text="按住说话"
+        android:textColor="@color/black70"
+        android:textSize="@dimen/text_size_large" />
+
+    <ImageView
+        android:id="@+id/dialog_sound_recording_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_medium"
+        android:src="@drawable/ic_sound_recording" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/layout_margin_medium"
+        android:background="@color/gray20" />
+
+    <TextView
+        android:id="@id/dialog_negative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_onclick"
+        android:gravity="center"
+        android:paddingBottom="@dimen/layout_margin"
+        android:paddingTop="@dimen/layout_margin"
+        android:text="取消"
+        android:textColor="@color/black70"
+        android:textSize="@dimen/text_size_large" />
+
+
+</LinearLayout>

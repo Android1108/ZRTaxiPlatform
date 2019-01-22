@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/white">
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.HalfCircleView
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.CircleImageView
+                android:id="@+id/aty_user_info_image_avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aty_user_info_image_avatar"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:background="@drawable/bg_fillet_rectangle_orange"
+                android:text="出租车司机"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_small"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/layout_margin"
+            app:divider="@drawable/bg_layout_line"
+            app:showDividers="middle|end">
+
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                android:id="@+id/aty_user_info_vtv_sex"
+                style="@style/myFragment_valueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_onclick"
+                android:text="性别" />
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                android:id="@+id/aty_user_info_vtv_age"
+                style="@style/myFragment_valueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_onclick"
+                android:text="年龄" />
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                android:id="@+id/aty_user_info_vtv_phone"
+                style="@style/myFragment_valueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_onclick"
+                android:text="手机号码" />
+
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                android:id="@+id/aty_user_info_vtv_taxi_company"
+                style="@style/myFragment_valueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_onclick"
+                android:text="出租车公司" />
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                android:id="@+id/aty_user_info_vtv_city"
+                style="@style/myFragment_valueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_onclick"
+                android:text="城市" />
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                android:id="@+id/aty_user_info_vtv_address"
+                style="@style/myFragment_valueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_onclick"
+                android:text="地址" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

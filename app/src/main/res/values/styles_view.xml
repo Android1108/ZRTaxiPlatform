@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="mainActivity_bottom_radio_button">
+        <item name="android:textColor">@drawable/color_text_select_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin_mini</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin_mini</item>
+
+    </style>
+
+
+    <style name="indexFragment_menu_text">
+        <item name="android:drawablePadding">@dimen/layout_margin_mini</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@drawable/color_index_select_text_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="myFragment_valueText">
+        <item name="android:paddingLeft">@dimen/layout_margin</item>
+        <item name="android:paddingRight">@dimen/layout_margin</item>
+        <item name="android:paddingTop">@dimen/layout_margin_tiny</item>
+        <item name="android:paddingBottom">@dimen/layout_margin_tiny</item>
+        <item name="android:textColor">@color/black70</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="rightTextColor">@color/black70</item>
+        <item name="rightTextSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="releaseActivityText">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black70</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:drawablePadding">@dimen/layout_margin</item>
+    </style>
+
+
+    <style name="releaseInfoTextRelease">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/layout_margin</item>
+        <item name="android:paddingBottom">@dimen/layout_margin</item>
+        <item name="android:background">@drawable/bg_fillet_rectangle_orange</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="submitText">
+        <item name="android:background">@drawable/bg_fillet_rectangle_orange_radius_5</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingTop">@dimen/layout_margin</item>
+        <item name="android:paddingBottom">@dimen/layout_margin</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin_tiny</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin_tiny</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="submitText1">
+        <item name="android:background">@drawable/bg_fillet_rectangle_gray_radius_5</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingTop">@dimen/layout_margin</item>
+        <item name="android:paddingBottom">@dimen/layout_margin</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin_tiny</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin_tiny</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="editText">
+        <item name="android:textColor">@color/black70</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="editTextBackground" parent="editText">
+        <item name="android:background">@drawable/bg_white_bottom_line_gray20</item>
+        <item name="android:paddingLeft">@dimen/layout_margin_tiny</item>
+        <item name="android:paddingTop">@dimen/layout_margin_tiny</item>
+        <item name="android:paddingRight">@dimen/layout_margin_tiny</item>
+        <item name="android:paddingBottom">@dimen/layout_margin_tiny</item>
+    </style>
+
+    <style name="valueEdit" parent="editTextBackground">
+        <item name="leftMinWidth">@dimen/value_text_width</item>
+        <item name="leftTextColor">@color/black70</item>
+        <item name="leftTextSize">@dimen/text_size_medium</item>
+        <item name="rightTextColor">@color/black70</item>
+        <item name="rightTextSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="myFragment_text">
+        <item name="android:drawablePadding">@dimen/layout_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black70</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+
+    </style>
+</resources>

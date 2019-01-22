@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.wzeiri.zr.zrtaxiplatform">
+
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取语音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <permission
+        android:name="${applicationId}.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required -->
+    <uses-permission android:name="${applicationId}.permission.JPUSH_MESSAGE" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 启动页 -->
+        <activity
+            android:name=".ui.activity.StartActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/StartTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- 注册 -->
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 首页 -->
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar">
+
+        </activity>
+
+        <!-- 登录页 -->
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoTitleTheme" />
+
+
+        <!-- 身份证验证检测 -->
+        <activity
+            android:name=".ui.activity.IdCardAuthenticationActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 司机认证 -->
+        <activity
+            android:name=".ui.activity.DriverAuthenticationActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 个人资料 -->
+        <activity
+            android:name=".ui.activity.MyUserInfoActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 车辆认证 -->
+        <activity
+            android:name=".ui.activity.VehicleAuthenticationActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!--  修改密码-->
+        <activity
+            android:name=".ui.activity.ChangePasswordActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 意见反馈 -->
+        <activity
+            android:name=".ui.activity.OpinionFeedbackActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 财务丢失 -->
+        <activity
+            android:name=".ui.activity.FinancialLossActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 发布失物招领 -->
+        <activity
+            android:name=".ui.activity.ReleaseLostFoundActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar"
+            android:windowSoftInputMode="adjustPan" />
+
+
+        <!-- 发布管理 -->
+        <activity
+            android:name=".ui.activity.ReleaseActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/ReleaseTheme" />
+
+        <!-- 求职招聘 -->
+        <activity
+            android:name=".ui.activity.JobHuntingActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 车辆交易 -->
+        <activity
+            android:name=".ui.activity.VehicleTransactionActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 安全学习 -->
+
+        <activity
+            android:name=".ui.activity.SafetyLearnActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 文明创建 -->
+        <activity
+            android:name=".ui.activity.CivilizedSocietyActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 部门公告 -->
+        <activity
+            android:name=".ui.activity.DepartmentNoticeActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+
+        <!-- 司机特惠 -->
+        <activity
+            android:name=".ui.activity.DriverDiscountPrivilegeActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+
+        <!-- 财务丢失详情 -->
+
+        <activity
+            android:name=".ui.activity.FinancialLossDetailActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 司机特惠详情 -->
+        <activity
+            android:name=".ui.activity.DriverDiscountDetailActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 求职详情 -->
+        <activity
+            android:name=".ui.activity.JobInfoDetailActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+
+        <!-- 个人信息详情 -->
+
+        <activity
+            android:name=".ui.activity.UserInfoDetailActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 发布求职信息 -->
+        <activity
+            android:name=".ui.activity.ReleaseCandidateInfoActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 发布求职信息 -->
+        <activity
+            android:name=".ui.activity.ReleaseCandidateInfoActivity1"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 发布车换座套 -->
+
+        <activity
+            android:name=".ui.activity.ReleaseChangeSeatCoverInfoActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 发布张贴广告照片 -->
+        <activity
+            android:name=".ui.activity.ReleaseAdvertisementPhotoInfoActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 发布gps故障信息 -->
+        <activity
+            android:name=".ui.activity.ReleaseGpsFaultActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 财富 -->
+
+        <activity
+            android:name=".ui.activity.WealthActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 余额明细 -->
+        <activity
+            android:name=".ui.activity.BalanceInfoActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 账单 -->
+        <activity
+            android:name=".ui.activity.BillActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!--  发现详情 -->
+        <activity
+            android:name=".ui.activity.FindNewsDetailActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 我的银行卡 -->
+        <activity
+            android:name=".ui.activity.MyBankCardActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 我的支付宝 -->
+        <activity
+            android:name=".ui.activity.MyAliPayActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 加油卡充值 -->
+        <activity
+            android:name=".ui.activity.RefuelingCardRechargeActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 加油卡充值记录 -->
+        <activity
+            android:name=".ui.activity.OilCardRechargeActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 学习记录 -->
+        <activity
+            android:name=".ui.activity.LearningRecordActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 我的积分 -->
+        <activity
+            android:name=".ui.activity.MyIntegralActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!--  答题 -->
+        <activity
+            android:name=".ui.activity.AnswerActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 我的发布 -->
+
+        <!-- 司机互动 -->
+        <activity
+            android:name=".ui.activity.DriverInteractionActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 发布司机互动 -->
+        <activity
+            android:name=".ui.activity.ReleaseDriverInteractionActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 司机互动详情 -->
+        <activity
+            android:name=".ui.activity.DriverInteractionDetailActivity1"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 司机互动详情 -->
+        <activity
+            android:name=".ui.activity.DriverInteractionDetailActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 便捷服务 -->
+        <activity
+            android:name=".ui.activity.ConvenientServiceActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 我的二维码 -->
+        <activity
+            android:name=".ui.activity.MyQRCodeActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 绑定出租车 -->
+        <activity
+            android:name=".ui.activity.BindTaxiActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!--  便捷服务搜索 -->
+        <activity
+            android:name=".ui.activity.ConvenientServiceSearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoAnimationTheme.TranslucentTheme" />
+        <!-- 法律咨询 -->
+        <activity
+            android:name=".ui.activity.LegalAdviceActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoAnimationTheme" />
+
+        <!--  我要咨询 -->
+        <activity
+            android:name=".ui.activity.LegalAdviceConsultationActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoAnimationTheme" />
+
+        <!-- 法律咨询回复 -->
+
+        <activity
+            android:name=".ui.activity.MyLegalAdviceReplyActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 考试结果 -->
+        <activity
+            android:name=".ui.activity.TestResultsActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 查看错题集 -->
+        <activity
+            android:name=".ui.activity.AnswerCheckErrorActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 视频学习 -->
+        <!--  http://blog.csdn.net/terrantian/article/details/18670381-->
+        <activity
+            android:name=".ui.activity.VideoStudyActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="userLandscape"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 图片缩放 -->
+        <activity
+            android:name=".ui.activity.ImageZoomActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!--  所在城市  -->
+        <!--  获取出租车公司 -->
+        <activity
+            android:name=".ui.activity.GetOpCompaniesActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 申请提现 -->
+        <activity
+            android:name=".ui.activity.ApplyWithdrawCashActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+
+        <!-- 我的求职信息 -->
+        <activity
+            android:name=".ui.activity.MyReleaseJobInfoActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 我发布的司机互动 -->
+        <activity
+            android:name=".ui.activity.MyReleaseDriverInteractionActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 编辑司机互动内容 -->
+        <activity
+            android:name=".ui.activity.EditDriverInteractionActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 我发布的失物招领 -->
+        <activity
+            android:name=".ui.activity.MyReleaseLostFoundActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 法律咨询 - 咨询 -->
+        <activity
+            android:name=".ui.activity.MyLegalAdviceActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 选择法律咨询 -->
+        <activity
+            android:name=".ui.activity.SelectLegalAdviceTypeActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 我发布的广告张贴 -->
+        <activity
+            android:name=".ui.activity.MyReleasePostingAdvertisementActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 我发布的车辆故障信息 -->
+        <activity
+            android:name=".ui.activity.MyReleaseCarFaultInfoActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 我发布的车换座套 -->
+        <activity
+            android:name=".ui.activity.MyReleaseSeatCoverActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 选择司机互动板块 -->
+
+        <activity
+            android:name=".ui.activity.SelectDriverInteractionPlateActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 选择品牌 -->
+
+        <activity
+            android:name=".ui.activity.SelectCarBrandActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 颜色 -->
+        <activity
+            android:name=".ui.activity.SelectCarColorActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 选择出租车公司 -->
+        <activity
+            android:name=".ui.activity.SelectTaxiCompanyActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 车辆交易详情 -->
+        <activity
+            android:name=".ui.activity.CarTransactionDetailActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 选择地区 -->
+        <activity
+            android:name=".ui.activity.SelectTenantActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 选择城市 -->
+        <activity
+            android:name=".ui.activity.SelectRegionRecyclerActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 关于我们 -->
+        <activity
+            android:name=".ui.activity.AboutUsActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 修改详细地址 -->
+        <activity
+            android:name=".ui.activity.ChangeAddressActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 忘记密码 -->
+        <activity
+            android:name=".ui.activity.ForgetPasswordActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 选择地区 -->
+        <activity
+            android:name=".ui.activity.SelectRegionActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 充值话费 -->
+        <activity
+            android:name=".ui.activity.TelephoneFareRechargeActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 收付款 -->
+        <activity
+            android:name=".ui.activity.PaymentQRCodeActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 培训公告详情 -->
+        <activity
+            android:name=".ui.activity.TrainDetailActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 除培训公告外所有详情 -->
+        <activity
+            android:name=".ui.activity.ArticleDetailActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 注册协议 -->
+        <activity
+            android:name=".ui.activity.RegistrationAgreementActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 通知 -->
+        <activity
+            android:name=".ui.activity.NotificationActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 选择加油卡 -->
+        <activity
+            android:name=".ui.activity.SelectRefuelingCard"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 添加加油卡 -->
+        <activity
+            android:name=".ui.activity.AddRefuelingCardActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 每月之星 -->
+        <activity
+            android:name=".ui.activity.ArtyStarActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!-- 扫一扫 -->
+        <activity
+            android:name=".ui.activity.CodeScanActivity"
+            android:screenOrientation="userPortrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/NoNoticeBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 展示web数据 -->
+        <activity
+            android:name=".ui.activity.WebActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 我发布的求职信息详情 -->
+        <activity
+            android:name=".ui.activity.MyReleaseCandidateDetailActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 我发布的广告张贴详情 -->
+        <activity
+            android:name=".ui.activity.MyReleaseAdvertisementPhotoDetailActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 我发布的车换座套详情 -->
+        <activity
+            android:name=".ui.activity.MyReleaseChangeSeatCoverDetailActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 详细通知详情 -->
+        <activity
+            android:name=".ui.activity.MessageDetailActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 故障信息详情 -->
+        <activity
+            android:name=".ui.activity.MyReleaseGpsFaultDetailActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 佣金列表 -->
+        <activity
+            android:name=".ui.activity.CommissionInfoListActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 部门专区 -->
+        <activity
+            android:name=".ui.activity.DepartmentChannelActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 司机服务 -->
+        <activity
+            android:name=".ui.activity.DriverServiceActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+
+        <!-- 违章查询 -->
+        <activity
+            android:name=".ui.activity.QueryIllegalActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 讯飞测试-->
+        <activity
+            android:name=".voice.SpeechRecognitionActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <!--   VideoView视频播放器 -->
+        <activity
+            android:name=".ui.activity.VideoViewActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+        <!-- 百度定位服务 -->
+        <service android:name=".service.BaiduLocationService" />
+        <!-- 监听网络状态变化 -->
+        <receiver android:name=".util.NetWorkHelp$WIFiStartBroadcastReceiver" />
+
+        <!-- 7.0开放uri需要加入 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${AUTHORITIES}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <!-- <provider
+             android:authorities="org.wzeiri.zr.zrtaxiplatform.DataProvider"
+             android:name="cn.jpush.android.service.DataProvider"
+             android:exported="true"
+             />-->
+
+
+        <!-- 百度地图 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="9IDhHTgqzzrHHBuZ9hoWZ0YsWjCV3rMb" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+
+        <!-- 极光 -->
+        <receiver
+            android:name=".broadcast.MyJPushMessageReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".broadcast.AcceptJPushMessageReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <!--Required 用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!--Required 用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!--Required 用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!--Required 用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 支付宝 begin-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 支付宝 end -->
+
+        <!-- 微信支付 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:screenOrientation="userPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="${WECHAT_APPID}" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- 微信分享 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="userPortrait" />
+
+        <activity
+            android:name=".ui.activity.ImageViewAcitvity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+        <activity
+            android:name=".ui.activity.WebActivity1"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/NoNoticeBar" />
+
+    </application>
+
+</manifest>

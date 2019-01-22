@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.ValueEditText
+            android:id="@+id/aty_apply_withdraw_cash_vet_money"
+            style="@style/valueEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入金额"
+            android:inputType="numberDecimal"
+            android:maxLength="15"
+            android:paddingRight="@dimen/layout_margin"
+            app:leftText="提现金额"
+            app:rightText="元" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_bottom_line_gray20"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/layout_margin">
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                android:id="@+id/aty_apply_withdraw_cash_vtv_max_money"
+                style="@style/valueEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="0.00元"
+                app:leftText="可提现金额" />
+
+            <TextView
+                android:id="@+id/aty_apply_withdraw_cash_text_whole_withdrawals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部提现"
+                android:textColor="@color/orange1"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.tag.TagRadioGroup
+            android:id="@+id/aty_apply_withdraw_cash_trg_withdrawals_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:divider="@drawable/bg_layout_line"
+            app:showDividers="middle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:padding="@dimen/layout_margin"
+                android:text="提现到"
+                android:textColor="@color/gray60" />
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.tag.TagRatioButton
+                android:id="@+id/aty_apply_withdraw_cash_trb_withdrawals_alipay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/layout_margin"
+                android:visibility="gone"
+                app:tagRatioButton_leftIcon="@drawable/ic_alpay"
+                app:tagRatioButton_leftIconMargin="@dimen/layout_margin"
+                app:tagRatioButton_topText="支付宝" />
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.tag.TagRatioButton
+                android:id="@+id/aty_apply_withdraw_cash_trb_withdrawals_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/layout_margin"
+                android:visibility="gone"
+                app:tagRatioButton_leftIcon="@drawable/ic_ps_unionpay"
+                app:tagRatioButton_leftIconMargin="@dimen/layout_margin"
+                app:tagRatioButton_topText="银行卡" />
+        </org.wzeiri.zr.zrtaxiplatform.widget.tag.TagRadioGroup>
+
+        <TextView
+            android:id="@+id/aty_apply_withdraw_cash_text_withdrawals"
+            style="@style/submitText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_small"
+            android:text="立即申请" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_tiny"
+            android:layout_marginRight="@dimen/layout_margin_tiny"
+            android:layout_marginTop="@dimen/layout_margin_tiny"
+            android:text="提现说明: "
+            android:textColor="@color/black70"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/aty_apply_withdraw_cash_text_rule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_tiny"
+            android:layout_marginRight="@dimen/layout_margin_tiny"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:textColor="@color/gray40"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+
+</ScrollView>

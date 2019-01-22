@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/layout_web_view" />
+
+    <LinearLayout
+        android:id="@+id/aty_web_layout_load_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/layout_margin"
+            android:drawableTop="@drawable/bg_not_date"
+            android:text="无法加载页面，请点击页面重新加载"
+            android:textColor="@color/gray40"
+            android:textSize="@dimen/text_size_large" />
+
+    </LinearLayout>
+
+</FrameLayout>

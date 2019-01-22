@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.ValueEditText
+        android:id="@+id/aty_my_ali_pay_edt_full_name"
+        style="@style/valueEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入姓名"
+        app:leftText="姓名" />
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.ValueEditText
+        android:id="@+id/aty_my_ali_pay_edt_ali_user_name"
+        style="@style/valueEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入支付宝帐号"
+        app:leftText="支付宝" />
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.ValueEditText
+        android:id="@+id/aty_my_ali_pay_edt_again_ali_user_name"
+        style="@style/valueEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请再次输入支付宝帐号"
+        app:leftText="支付宝" />
+    
+    <TextView
+        android:id="@+id/aty_my_ali_pay_text_save"
+        style="@style/submitText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_small"
+        android:text="保存" />
+
+</LinearLayout>

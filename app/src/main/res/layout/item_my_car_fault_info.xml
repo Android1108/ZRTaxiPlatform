@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/layout_margin_tiny"
+    android:paddingLeft="@dimen/layout_margin_tiny">
+
+
+    <TextView
+        android:id="@+id/item_my_car_fault_info_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black70"
+        android:textSize="@dimen/text_size_medium" />
+
+    <TextView
+        android:id="@+id/item_my_car_fault_info_text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:background="@drawable/bg_transparent_bottom_line_gray20"
+        android:paddingBottom="@dimen/layout_margin_tiny"
+        android:textColor="@color/gray50"
+        android:textSize="@dimen/text_size_small" />
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+        android:id="@+id/item_my_car_fault_info_vrv_type_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/layout_margin_tiny"
+        android:paddingTop="@dimen/layout_margin_tiny"
+        android:textColor="@color/gray50"
+        android:textSize="@dimen/text_size_small"
+        app:rightTextColor="@color/orange1"
+        app:rightTextSize="@dimen/text_size_small" />
+
+</LinearLayout>

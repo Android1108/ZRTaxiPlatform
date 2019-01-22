@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/layout_margin">
+
+    <ImageView
+        android:id="@+id/item_driver_discount_image"
+        android:layout_width="@dimen/image_size_medium"
+        android:layout_height="@dimen/image_size_small"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_driver_discount_text_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black70"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/item_driver_discount_text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:textColor="@color/gray50"
+            android:textSize="@dimen/text_size_medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/item_driver_discount_text_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/gray50"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/item_driver_discount_text_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:textColor="@color/gray50"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

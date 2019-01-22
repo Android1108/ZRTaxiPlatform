@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+        android:id="@+id/item_bill_vtv_date_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:paddingLeft="@dimen/layout_margin_small"
+        android:paddingRight="@dimen/layout_margin_small"
+        android:textColor="@color/gray60"
+        android:textSize="@dimen/text_size_medium"
+        app:rightTextColor="@color/orange1"
+        app:rightTextSize="@dimen/text_size_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_transparent_bottom_line_gray20"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/layout_margin"
+        android:paddingLeft="@dimen/layout_margin_small"
+        android:paddingRight="@dimen/layout_margin_small"
+        android:paddingTop="@dimen/layout_margin">
+
+        <ImageView
+            android:id="@+id/item_bill_image_commodity_image"
+            android:layout_width="@dimen/image_size_little"
+            android:layout_height="@dimen/image_size_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_bill_text_commodity_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/gray60"
+                android:textSize="@dimen/text_size_medium" />
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                android:id="@+id/item_bill_vtv_commodity_price_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_mini"
+                android:textColor="@color/orange1"
+                android:textSize="@dimen/text_size_medium"
+                app:rightTextColor="@color/gray50"
+                app:rightTextSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/layout_margin"
+        android:paddingLeft="@dimen/layout_margin_small"
+        android:paddingRight="@dimen/layout_margin_small"
+        android:paddingTop="@dimen/layout_margin">
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+            android:id="@+id/item_bill_vtv_discount_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange1"
+            android:textSize="@dimen/text_size_medium"
+            app:leftMinWidth="20dp"
+            app:leftTextColor="@color/black70"
+            app:leftTextSize="@dimen/text_size_small" />
+
+
+        <TextView
+            android:id="@+id/item_bill_text_commodity_sum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/gray60"
+            android:textSize="@dimen/text_size_small" />
+
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+            android:id="@+id/item_bill_vtv_commodity_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray60"
+            android:textSize="@dimen/text_size_small"
+            app:leftTextColor="@color/gray60"
+            app:leftTextSize="@dimen/text_size_small" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_release_info_content" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/layout_margin_small"
+                app:divider="@drawable/bg_layout_line"
+                app:showDividers="middle">
+
+                <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                    android:id="@+id/aty_release_lost_found_info_vet_get_out_car_plateNumber"
+                    style="@style/valueEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingLeft="0dp"
+                    android:singleLine="true"
+
+                    app:leftText="车牌号" />
+                <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                    android:id="@+id/aty_release_lost_found_info_vtv_find_date"
+                    style="@style/valueEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingLeft="0dp"
+                    app:leftText="发现日期" />
+
+                <org.wzeiri.zr.zrtaxiplatform.widget.ValueEditText
+                    android:id="@+id/aty_release_lost_found_info_vet_by_car_address"
+                    style="@style/valueEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请填写上车地点"
+                    android:paddingLeft="0dp"
+                    android:singleLine="true"
+                    app:leftText="上车地点" />
+
+                <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                    android:id="@+id/aty_release_lost_found_info_vet_by_car_time"
+                    style="@style/valueEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请填写上车时间"
+                    android:paddingLeft="0dp"
+                    android:singleLine="true"
+                    app:leftText="上车时间" />
+
+                <org.wzeiri.zr.zrtaxiplatform.widget.ValueEditText
+                    android:id="@+id/aty_release_lost_found_info_vet_get_out_car_address"
+                    style="@style/valueEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请填写下车地点"
+                    android:paddingLeft="0dp"
+                    android:singleLine="true"
+                    app:leftText="下车地点" />
+
+                <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                    android:id="@+id/aty_release_lost_found_info_vet_get_out_car_time"
+                    style="@style/valueEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请填写下车时间"
+                    android:paddingLeft="0dp"
+                    android:singleLine="true"
+                    app:leftText="下车时间" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_release_info_release" />
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ValueTextView">
+        <attr name="rightText" format="string|reference" />
+        <attr name="rightTextColor" format="color|reference" />
+        <attr name="rightTextSize" format="dimension" />
+        <attr name="rightHint" format="string|reference" />
+        <attr name="rightHintColor" format="color|reference" />
+        <attr name="leftText" format="string|reference" />
+        <attr name="leftTextColor" format="color|reference" />
+        <attr name="leftTextSize" format="dimension" />
+        <attr name="leftMinWidth" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="DrawTextTextView">
+        <attr name="drawableLeftText" format="string|reference" />
+        <attr name="drawableTopText" format="string|reference" />
+        <attr name="drawableRightText" format="string|reference" />
+        <attr name="drawableBottomText" format="string|reference" />
+        <attr name="drawableLeftTextColor" format="color|reference" />
+        <attr name="drawableTopTextColor" format="color|reference" />
+        <attr name="drawableRightTextColor" format="color|reference" />
+        <attr name="drawableBottomTextColor" format="color|reference" />
+        <attr name="drawableLeftTextSize" format="dimension|reference" />
+        <attr name="drawableTopTextSize" format="dimension|reference" />
+        <attr name="drawableRightTextSize" format="dimension|reference" />
+        <attr name="drawableBottomTextSize" format="dimension|reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean" />
+        <attr name="max_select" format="integer" />
+        <attr name="gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="TagRatioButton">
+        <attr name="tagRatioButton_topText" format="string|reference" />
+        <attr name="tagRatioButton_topTextSize" format="dimension|reference" />
+        <attr name="tagRatioButton_topTextColor" format="color|reference" />
+        <attr name="tagRatioButton_bottomText" format="string|reference" />
+        <attr name="tagRatioButton_bottomTextSize" format="dimension|reference" />
+        <attr name="tagRatioButton_bottomTextColor" format="color|reference" />
+        <attr name="tagRatioButton_leftIcon" format="reference" />
+        <attr name="tagRatioButton_leftIconSize" format="dimension|reference" />
+        <attr name="tagRatioButton_leftIconMargin" format="dimension|reference" />
+        <attr name="tagRatioButton_check" format="boolean" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="CircularAnimationView">
+        <attr name="circularOuterCircleColor" format="color|reference" />
+        <attr name="circularInnerCircleColor" format="color|reference" />
+        <attr name="circularDrawOuterCircle" format="boolean" />
+        <attr name="circularDegrees"  format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ClearEditText">
+        <attr name="clearDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="IndexBar">
+        <attr name="letterSize" format="dimension" />
+        <attr name="letterColor" format="color" />
+        <attr name="focusLetterColor" format="color" />
+        <attr name="letterSpacingExtra" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="CornerFrameLayout">
+        <attr name="radius" format="dimension" />
+        <attr name="radiusPadding" format="boolean" />
+        <attr name="topLeftRadius" format="dimension" />
+        <attr name="topRightRadius" format="dimension" />
+        <attr name="bottomLeftRadius" format="dimension" />
+        <attr name="bottomRightRadius" format="dimension" />
+        <attr name="isCircle" format="boolean" />
+    </declare-styleable>
+
+</resources>

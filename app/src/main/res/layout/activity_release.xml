@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/aty_release_text_candidate_info"
+                style="@style/releaseActivityText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_release_job_search_information"
+                android:text="求职信息" />
+
+            <TextView
+                android:id="@+id/aty_release_text_driver_interaction"
+                style="@style/releaseActivityText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_release_driver_interaction"
+                android:text="司机之家" />
+
+            <TextView
+                android:id="@+id/aty_release_text_lost_found"
+                style="@style/releaseActivityText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_release_lost_found"
+                android:text="失物招领" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_big"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/aty_release_text_car_seat_cover"
+                style="@style/releaseActivityText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_release_car_seat_cover"
+                android:text="车换座套" />
+
+            <TextView
+                android:id="@+id/aty_release_text_car_posting_advertisement"
+                style="@style/releaseActivityText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_release_advertising_photos"
+                android:text="广告张贴照片" />
+
+            <TextView
+                android:id="@+id/aty_release_text_car_gps_fault"
+                style="@style/releaseActivityText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_release_gps_fault"
+                android:text="GPS/广告故障" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="65dp">
+
+        <ImageView
+            android:id="@+id/aty_release_img_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_release"
+            android:transitionName="bottomButton" />
+
+        <ImageView
+            android:id="@+id/aty_release_img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"
+            android:transitionName="bottomButton"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+</LinearLayout>

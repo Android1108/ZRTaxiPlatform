@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/layout_margin"
+    android:paddingLeft="@dimen/layout_margin_small"
+    android:paddingRight="@dimen/layout_margin_small"
+    android:paddingTop="@dimen/layout_margin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.ClearEditText
+            android:id="@+id/aty_convenient_service_map_search_edit_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="@dimen/layout_margin"
+            android:hint="输入关键字"
+            android:paddingBottom="@dimen/layout_margin"
+            android:paddingLeft="@dimen/layout_margin"
+            android:paddingTop="@dimen/layout_margin"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_medium" />
+
+        <ImageView
+            android:id="@+id/aty_convenient_service_map_search_image_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/text_size_mini"
+            android:src="@drawable/ic_voice" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/aty_convenient_service_map_search_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2px"
+        android:background="@color/white" />
+
+
+</LinearLayout>

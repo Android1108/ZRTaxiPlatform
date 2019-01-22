@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_index_swl_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="嗒喜会将红包发送至您绑定的银行卡，为确保准时准确，请核对您的银行卡信息，若有错误请至首页T币页修改"
+        android:textColorHint="@color/black90"
+
+        android:paddingLeft="@dimen/layout_margin_tiny"
+        />
+    <LinearLayout
+            android:layout_marginTop="@dimen/layout_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/layout_margin_tiny"
+            >
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="持卡人"
+                />
+            <TextView
+                android:id="@+id/bankCardOwner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_margin_tiny"
+        >
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="银行卡号"
+            />
+        <TextView
+            android:id="@+id/bankCardNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_margin_tiny"
+        >
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="开户银行"
+            />
+        <TextView
+            android:id="@+id/bankName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_margin_tiny"
+        >
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="手机号"
+
+            />
+        <TextView
+            android:id="@+id/bankCardBindPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            />
+    </LinearLayout>
+    <EditText
+        android:layout_marginTop="@dimen/layout_margin"
+        android:id="@+id/aty_release_advertisement_photo_info_edit_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="top"
+        android:lines="10"
+        android:paddingBottom="@dimen/layout_margin_mini"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin"
+        android:paddingTop="@dimen/layout_margin"
+        android:textColor="@color/black70"
+        android:textSize="@dimen/text_size_small" />
+    <org.wzeiri.zr.zrtaxiplatform.widget.flow.FlowLayout
+        android:id="@+id/aty_release_advertisement_photo_info_fl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/layout_margin"
+        android:paddingLeft="@dimen/layout_margin_small"
+        android:paddingTop="@dimen/layout_margin" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:background="@color/white"
+       android:paddingLeft="@dimen/layout_margin_small"
+       >
+        <ImageView
+           android:id="@+id/Reference_resources"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           />
+   </LinearLayout>
+
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+        android:id="@+id/aty_release_advertisement_photo_info_vtv_date"
+        style="@style/valueEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        app:leftMinWidth="@dimen/value_text_width"
+        app:leftText="张贴时间" />
+
+    <include
+        layout="@layout/layout_taxi_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <include
+        layout="@layout/layout_release_info_release"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

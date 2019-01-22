@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+        android:id="@+id/aty_release_gps_fault_info_vtv_fault_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_onclick"
+        android:drawableRight="@drawable/ic_arrow_right_gray"
+        android:hint="请选择故障类型"
+        android:paddingBottom="@dimen/layout_margin"
+        android:paddingLeft="@dimen/layout_margin_tiny"
+        android:paddingRight="@dimen/layout_margin_tiny"
+        android:paddingTop="@dimen/layout_margin"
+        android:textColor="@color/black70"
+        android:textSize="@dimen/text_size_medium"
+        app:leftMinWidth="@dimen/value_text_width"
+        app:leftText="故障类型"
+        app:leftTextSize="@dimen/text_size_medium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/bg_transparent_bottom_line_gray20" />
+
+    <EditText
+        android:id="@+id/aty_release_gps_fault_info_edit_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="描述"
+        android:lines="10"
+        android:paddingBottom="@dimen/layout_margin_mini"
+        android:paddingLeft="@dimen/layout_margin_tiny"
+        android:paddingRight="@dimen/layout_margin_tiny"
+        android:paddingTop="@dimen/layout_margin"
+        android:textColor="@color/black70"
+        android:textSize="@dimen/text_size_small" />
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.flow.FlowLayout
+        android:id="@+id/aty_release_gps_fault_info_fl_photo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/layout_margin"
+        android:paddingLeft="@dimen/layout_margin_tiny"
+        android:paddingRight="@dimen/layout_margin_tiny"
+        android:paddingTop="@dimen/layout_margin" />
+
+    <include
+        layout="@layout/layout_taxi_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <include
+        android:id="@+id/aty_release_gps_fault_info_view_submit"
+        layout="@layout/layout_release_info_release"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+
+</LinearLayout>

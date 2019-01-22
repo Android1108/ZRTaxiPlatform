@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/layout_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_bottom_line_gray20"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/aty_car_transaction_detail_info_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:paddingLeft="@dimen/layout_margin_small"
+                android:textColor="@color/black70"
+                android:textSize="@dimen/text_size_medium" />
+
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                android:id="@+id/aty_car_transaction_detail_info_vtv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_bottom_line_gray20"
+                android:paddingBottom="@dimen/layout_margin"
+                android:paddingLeft="@dimen/layout_margin_small"
+                android:paddingTop="@dimen/layout_margin"
+                android:textColor="@color/gray50"
+                android:textSize="@dimen/text_size_small"
+                app:leftTextColor="@color/gray50"
+                app:leftTextSize="@dimen/text_size_small" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_small"
+                android:layout_marginRight="@dimen/layout_margin_tiny"
+                android:background="@drawable/bg_white_bottom_line_gray20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/layout_margin"
+                android:paddingTop="@dimen/layout_margin">
+
+                <TextView
+                    android:id="@+id/aty_car_transaction_detail_info_text_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_publisher"
+                    android:drawablePadding="@dimen/layout_margin"
+                    android:textColor="@color/gray50"
+                    android:textSize="@dimen/text_size_small" />
+
+                <ImageView
+                    android:id="@+id/aty_car_transaction_detail_info_image_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:src="@drawable/ic_call_phone"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_small"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/layout_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_address" />
+
+                <TextView
+                    android:id="@+id/aty_car_transaction_detail_info_text_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:textColor="@color/gray50"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_bottom_line_gray20"
+                android:paddingBottom="@dimen/layout_margin_tiny"
+                android:paddingLeft="@dimen/layout_margin_small"
+                android:paddingTop="@dimen/layout_margin_tiny"
+                android:text="详细信息"
+                android:textColor="@color/black70"
+                android:textSize="@dimen/text_size_medium" />
+
+
+            <!--  <TextView
+                  android:id="@+id/aty_car_transaction_detail_info_text_detail"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/layout_margin"
+                  android:paddingLeft="@dimen/layout_margin_small"
+                  android:textColor="@color/black70"
+                  android:textSize="@dimen/text_size_small" />-->
+
+            <WebView
+                android:id="@+id/aty_car_transaction_detail_info_web_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:paddingBottom="@dimen/layout_margin" />
+
+            <!-- <FrameLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_marginLeft="@dimen/layout_margin_small"
+                 android:layout_marginRight="@dimen/layout_margin_small"
+                 android:layout_marginTop="@dimen/layout_margin">
+
+
+                 <android.support.v4.view.ViewPager
+                     android:id="@+id/aty_car_transaction_detail_info_vp_image_pager"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="vertical" />
+
+                 <TextView
+                     android:id="@+id/aty_car_transaction_detail_info_text_pager"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="right|bottom"
+                     android:layout_marginBottom="@dimen/layout_margin_small"
+                     android:background="@drawable/bg_left_fillet_rectangle_black"
+                     android:paddingLeft="@dimen/layout_margin_small"
+                     android:paddingRight="@dimen/layout_margin_small"
+                     android:textColor="@color/white"
+                     android:textSize="@dimen/text_size_small"
+                     android:visibility="gone" />
+
+             </FrameLayout>-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

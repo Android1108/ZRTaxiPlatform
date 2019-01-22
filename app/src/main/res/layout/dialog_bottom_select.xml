@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dialog_bottom_select_text_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/bg_onclick"
+            android:gravity="center"
+            android:padding="@dimen/layout_margin"
+            android:text="取消"
+            android:textColor="@color/orange1"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/dialog_bottom_select_text_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_onclick"
+            android:gravity="center"
+            android:padding="@dimen/layout_margin"
+            android:text="确认"
+            android:textColor="@color/orange1"
+            android:textSize="@dimen/text_size_medium" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/dialog_bottom_select_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:scrollbars="none" />
+
+
+</LinearLayout>

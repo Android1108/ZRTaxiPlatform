@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_my_swl_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/white">
+
+                <org.wzeiri.zr.zrtaxiplatform.widget.HalfCircleView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+
+                <org.wzeiri.zr.zrtaxiplatform.widget.CircleImageView
+                    android:id="@+id/fragment_my_image_avatar"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/fragment_my_user_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/fragment_my_image_avatar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/layout_margin"
+                    android:background="@drawable/bg_fillet_rectangle_orange_radius_50"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:text="出租车司机"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_little" />
+
+
+                <TextView
+                    android:id="@+id/fragment_my_text_star_month_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fragment_my_image_avatar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/layout_margin_tiny"
+                    android:background="@drawable/bg_fillet_rectangle_frame_orange_100"
+                    android:drawableLeft="@drawable/ic_star_month"
+                    android:drawablePadding="@dimen/layout_margin_mini"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="@dimen/layout_margin"
+                    android:paddingRight="@dimen/layout_margin"
+                    android:paddingTop="3dp"
+                    android:text="0次"
+                    android:textColor="@color/orange1"
+                    android:textSize="@dimen/text_size_small" />
+
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/fragment_my_image_avatar">
+
+
+                    <org.wzeiri.zr.zrtaxiplatform.widget.DrawTextTextView
+                        android:id="@+id/fragment_my_dttv_study"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:padding="@dimen/layout_margin"
+                        android:text="学习"
+                        android:textSize="@dimen/text_size_small"
+                        app:drawableTopText="0"
+                        app:drawableTopTextColor="@color/orange1"
+                        app:drawableTopTextSize="@dimen/text_size_large" />
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/fragment_my_image_avatar">
+
+
+                    <org.wzeiri.zr.zrtaxiplatform.widget.DrawTextTextView
+                        android:id="@+id/fragment_my_dttv_integral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:padding="@dimen/layout_margin"
+                        android:text="积分"
+                        android:textSize="@dimen/text_size_small"
+                        app:drawableTopText="0"
+                        app:drawableTopTextColor="@color/orange1"
+                        app:drawableTopTextSize="@dimen/text_size_large" />
+
+
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_small"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:divider="@drawable/bg_layout_line"
+                app:showDividers="middle|end|beginning">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/layout_margin_tiny">
+
+                    <TextView
+                        style="@style/myFragment_valueText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="我的发布" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/fragment_my_text_job_info"
+                            style="@style/myFragment_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_my_release_job_search_information"
+                            android:text="求职信息" />
+
+                        <TextView
+                            android:id="@+id/fragment_my_text_driver_interaction"
+                            style="@style/myFragment_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_my_release_driver_interaction"
+                            android:text="司机之家" />
+
+                        <TextView
+                            android:id="@+id/fragment_my_text_lost_found"
+                            style="@style/myFragment_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_my_release_lost_found"
+                            android:text="失物招领" />
+
+                        <TextView
+                            android:id="@+id/fragment_my_text_legal_advice"
+                            style="@style/myFragment_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_legal_advice"
+                            android:text="法律咨询" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layout_margin"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/fragment_my_text_car_seat_cover"
+                            style="@style/myFragment_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_my_release_car_seat_cover"
+                            android:text="车换座套" />
+
+                        <TextView
+                            android:id="@+id/fragment_my_text_advertising_posting"
+                            style="@style/myFragment_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_my_release_advertising_photos"
+                            android:text="广告张贴" />
+
+                        <TextView
+                            android:id="@+id/fragment_my_text_gps_fault"
+                            style="@style/myFragment_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_my_release_gps_fault"
+                            android:text="故障信息" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                    android:id="@+id/fragment_my_vtv_re_my_qr_code"
+                    style="@style/myFragment_valueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_onclick"
+                    android:drawablePadding="@dimen/layout_margin"
+                    android:drawableRight="@drawable/ic_arrow_right_gray"
+                    android:text="我的二维码"
+                    app:rightTextColor="@color/gray50"
+
+                    />
+
+                <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                    android:id="@+id/fragment_my_vtv_re_certification"
+                    style="@style/myFragment_valueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_onclick"
+                    android:drawablePadding="@dimen/layout_margin"
+                    android:drawableRight="@drawable/ic_arrow_right_gray"
+                    android:text="司机认证"
+                    app:rightTextColor="@color/gray50"
+
+                    />
+
+                <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                    android:id="@+id/fragment_my_vtv_user_info"
+                    style="@style/myFragment_valueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_onclick"
+                    android:drawableRight="@drawable/ic_arrow_right_gray"
+                    android:text="个人资料"
+
+                    />
+
+                <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                    android:id="@+id/fragment_my_vtv_change_password"
+                    style="@style/myFragment_valueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_onclick"
+                    android:drawableRight="@drawable/ic_arrow_right_gray"
+                    android:text="修改密码"
+
+                    />
+
+                <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                    android:id="@+id/fragment_my_vtv_opinion_feedback"
+                    style="@style/myFragment_valueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_onclick"
+                    android:drawableRight="@drawable/ic_arrow_right_gray"
+                    android:text="意见反馈"
+
+                    />
+
+                <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                    android:id="@+id/fragment_my_vtv_about_us"
+                    style="@style/myFragment_valueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_onclick"
+                    android:drawableRight="@drawable/ic_arrow_right_gray"
+                    android:text="关于我们"
+
+                    />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

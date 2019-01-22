@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+        android:id="@+id/aty_add_refueling_card_vtv_card_type"
+        style="@style/valueEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_arrow_right_gray"
+        android:hint="请选择加油卡类型"
+        android:paddingLeft="@dimen/layout_margin_tiny"
+        android:paddingRight="@dimen/layout_margin_tiny"
+        app:leftMinWidth="@dimen/value_text_width"
+        app:leftText="加油卡种类" />
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.ValueEditText
+        android:id="@+id/aty_add_refueling_card_vtv_card_number"
+        style="@style/valueEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入加油卡号"
+        android:inputType="number"
+        android:paddingLeft="@dimen/layout_margin_tiny"
+        android:paddingRight="@dimen/layout_margin_tiny"
+        app:leftMinWidth="@dimen/value_text_width"
+        app:leftText="加油卡号" />
+
+
+    <TextView
+        android:id="@+id/aty_add_refueling_card_text_submit"
+        style="@style/submitText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_small"
+        android:text="提交" />
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/aty_index_layout_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/gray10" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:background="@color/transparent"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/aty_index_rg_bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_white_top_line_gray20"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/layout_margin_mini"
+            android:paddingTop="8dp">
+
+            <RadioButton
+                android:id="@+id/aty_index_rb_bottom_menu_index"
+                style="@style/mainActivity_bottom_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/layout_margin_mini"
+                android:drawableTop="@drawable/img_home"
+                android:text="首页" />
+
+            <RadioButton
+                android:id="@+id/aty_index_rb_bottom_menu_find"
+                style="@style/mainActivity_bottom_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/layout_margin_mini"
+                android:drawableTop="@drawable/img_find"
+                android:text="发现" />
+
+            <Space
+                style="@style/mainActivity_bottom_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <RadioButton
+                android:id="@+id/aty_index_rb_bottom_menu_taxi"
+                style="@style/mainActivity_bottom_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/layout_margin_mini"
+                android:drawableTop="@drawable/img_taxi"
+                android:text="出租车" />
+
+            <RadioButton
+                android:id="@+id/aty_index_rb_bottom_menu_my"
+                style="@style/mainActivity_bottom_radio_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/layout_margin_mini"
+                android:drawableTop="@drawable/img_my"
+                android:text="我的" />
+
+        </RadioGroup>
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.MainReleaseImageView
+            android:id="@+id/aty_index_img_bottom_menu_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/btn_fabu"
+            android:transitionName="bottomButton" />
+
+        <!-- <org.wzeiri.zr.zrtaxiplatform.widget.CircularAnimationView
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_gravity="center_horizontal"
+             android:transitionName="bottomButton"
+             app:circularInnerCircleColor="@color/circularOrange"
+             app:circularOuterCircleColor="@color/white" />-->
+
+    </FrameLayout>
+
+</LinearLayout>

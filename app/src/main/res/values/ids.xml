@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="layout_recycler_view_recycler" type="id" />
+    <item name="layout_recycler_view_refresh_layout" type="id" />
+
+
+    <item name="adapter_item_view_type" type="id" />
+
+    <item name="view_photo_uri_tag" type="id" />
+    <item name="view_photo_url_tag" type="id" />
+
+    <item name="dialog_title" type="id" />
+    <item name="dialog_message" type="id" />
+    <item name="dialog_positive" type="id" />
+    <item name="dialog_positive1" type="id" />
+    <item name="dialog_neutral" type="id" />
+    <item name="dialog_negative" type="id" />
+</resources>

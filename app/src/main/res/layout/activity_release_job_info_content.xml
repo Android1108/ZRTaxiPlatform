@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/layout_margin">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/aty_release_job_info_edit_title"
+                style="@style/editTextBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:hint="标题"
+                android:paddingBottom="@dimen/layout_margin_small"
+                android:paddingLeft="@dimen/layout_margin_tiny"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/aty_release_job_info_edit_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="描述"
+                android:lines="10"
+                android:paddingLeft="@dimen/layout_margin_tiny"
+                android:paddingRight="@dimen/layout_margin_tiny"
+                android:textColor="@color/black70"
+                android:textSize="@dimen/text_size_small" />
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.flow.FlowLayout
+                android:id="@+id/aty_release_job_info_fl_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:paddingBottom="@dimen/layout_margin"
+                android:paddingLeft="@dimen/layout_margin_small"
+                android:paddingTop="@dimen/layout_margin" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/gray10" />
+
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/layout_margin_tiny"
+                app:divider="@drawable/bg_layout_line"
+                app:showDividers="middle">
+
+                <org.wzeiri.zr.zrtaxiplatform.widget.ValueEditText
+                    android:id="@+id/aty_release_job_info_vet_phone"
+                    style="@style/editTextBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请填写联系电话"
+                    android:inputType="number"
+                    android:paddingLeft="0dp"
+                    android:textColor="@color/black70"
+                    android:textSize="@dimen/text_size_medium"
+                    app:leftMinWidth="@dimen/value_text_width"
+                    app:leftText="联系电话"
+                    app:leftTextColor="@color/black70"
+                    app:leftTextSize="@dimen/text_size_medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+                <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                    android:id="@+id/aty_release_job_info_vtv_job_region"
+                    style="@style/editTextBackground"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_onclick"
+                    android:drawableRight="@drawable/ic_arrow_right_gray"
+                    android:hint="请选择求职地区"
+                    android:paddingLeft="0dp"
+                    android:textColor="@color/black70"
+                    android:textSize="@dimen/text_size_medium"
+                    app:leftMinWidth="@dimen/value_text_width"
+                    app:leftText="求职地区"
+                    app:leftTextColor="@color/black70"
+                    app:leftTextSize="@dimen/text_size_medium" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/aty_release_job_info_layout_submit"
+        layout="@layout/layout_release_info_release"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+</LinearLayout>

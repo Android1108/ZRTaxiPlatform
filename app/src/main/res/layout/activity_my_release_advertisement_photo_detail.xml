@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/aty_my_release_advertisement_photo_detail_text_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="描述"
+        android:lines="10"
+        android:paddingBottom="@dimen/layout_margin_mini"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin"
+        android:paddingTop="@dimen/layout_margin"
+        android:textColor="@color/black70"
+        android:textSize="@dimen/text_size_small" />
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.flow.FlowLayout
+        android:id="@+id/aty_my_release_advertisement_photo_detail_fl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/layout_margin"
+        android:paddingLeft="@dimen/layout_margin_small"
+        android:paddingTop="@dimen/layout_margin" />
+
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+        android:id="@+id/aty_my_release_advertisement_photo_detail_vtv_date"
+        style="@style/valueEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        app:leftMinWidth="@dimen/value_text_width"
+        app:leftText="张贴时间" />
+
+
+    <include
+        layout="@layout/layout_taxi_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_release_info_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+        android:id="@+id/aty_release_driver_interaction_vtv_plate"
+        style="@style/editTextBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:background="@drawable/bg_onclick"
+        android:drawableRight="@drawable/ic_arrow_right_gray"
+        android:hint="请选择发布的板块"
+        android:textColor="@color/black70"
+        android:textSize="@dimen/text_size_medium"
+        app:leftMinWidth="@dimen/value_text_width"
+        app:leftText="发布板块"
+        app:leftTextColor="@color/black70"
+        app:leftTextSize="@dimen/text_size_medium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray20" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <include layout="@layout/layout_release_info_release" />
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/aty_driver_interaction_detail_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:divider="@color/gray20"
+        android:dividerHeight="1px" />
+
+
+    <LinearLayout
+        android:id="@+id/aty_driver_interaction_detail_layout_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_top_line_gray20"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/layout_margin_mini"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin"
+        android:paddingTop="@dimen/layout_margin_mini"
+        android:visibility="gone">
+
+
+        <EditText
+            android:id="@+id/aty_driver_interaction_detail_edit_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_fillet_rectangle_gray10"
+            android:hint="添加评论..."
+            android:imeOptions="actionSend"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:singleLine="true"
+            android:textColor="@color/black70"
+            android:textColorHint="@color/gray50"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/aty_driver_interaction_detail_text_like_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:drawableTop="@drawable/bg_select_like"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="@color/gray50"
+            android:textSize="@dimen/text_size_small" />
+
+    </LinearLayout>
+
+</LinearLayout>

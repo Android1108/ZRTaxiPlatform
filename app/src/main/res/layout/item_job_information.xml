@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/layout_margin_small"
+    android:paddingRight="@dimen/layout_margin_small"
+    android:paddingTop="@dimen/layout_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_transparent_bottom_line_gray20"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/layout_margin">
+
+        <ImageView
+            android:id="@+id/item_job_information_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/layout_margin"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_job_information_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black70"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/item_job_information_text_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:textColor="@color/gray50"
+                android:textSize="@dimen/text_size_small" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+        android:id="@+id/item_job_information_vtv_release_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_margin"
+        android:paddingBottom="@dimen/layout_margin"
+        android:textColor="@color/black70"
+        android:textSize="@dimen/text_size_small"
+        app:rightTextColor="@color/gray50"
+        app:rightTextSize="@dimen/text_size_small" />
+
+</LinearLayout>

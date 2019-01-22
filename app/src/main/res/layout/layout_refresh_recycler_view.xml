@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.RecyclerRefreshLayout
+        android:id="@+id/layout_recycler_view_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clipChildren="false"
+        android:paddingBottom="@dimen/layout_margin">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/layout_recycler_view_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:paddingBottom="@dimen/layout_margin" />
+    </org.wzeiri.zr.zrtaxiplatform.widget.RecyclerRefreshLayout>
+
+
+    <include
+        android:id="@+id/layout_refresh_empty"
+        layout="@layout/layout_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

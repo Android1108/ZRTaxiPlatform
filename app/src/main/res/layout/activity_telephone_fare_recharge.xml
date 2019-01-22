@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.ValueEditText
+            android:id="@+id/aty_telephone_fare_recharge_vet_phone"
+            style="@style/editTextBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号码"
+            android:inputType="number"
+            android:textColor="@color/black70"
+            android:textSize="@dimen/text_size_medium"
+            app:rightTextColor="@color/gray40"
+            app:rightTextSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/layout_margin_small"
+            android:paddingTop="@dimen/layout_margin_tiny">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="充值金额"
+                android:textColor="@color/black70"
+                android:textSize="@dimen/text_size_small" />
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.flow.RadioFlowLayout
+                android:id="@+id/aty_telephone_fare_recharge_fl_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/layout_margin"
+                android:paddingRight="@dimen/layout_margin" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:paddingBottom="@dimen/layout_margin_tiny"
+            android:paddingLeft="@dimen/layout_margin_small"
+            android:paddingTop="@dimen/layout_margin_tiny"
+            android:text="支付方式" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <RadioButton
+                android:id="@+id/aty_telephone_fare_recharge_rb_ali_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/ic_alpay"
+                android:drawablePadding="@dimen/layout_margin"
+                android:drawableRight="@drawable/button_radio_button"
+                android:paddingBottom="@dimen/layout_margin_tiny"
+                android:paddingLeft="@dimen/layout_margin_small"
+                android:paddingRight="@dimen/layout_margin_small"
+                android:paddingTop="@dimen/layout_margin_tiny"
+                android:text="支付宝" />
+
+            <RadioButton
+                android:id="@+id/aty_telephone_fare_recharge_rb_we_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/ic_wechat_pay"
+                android:drawablePadding="@dimen/layout_margin"
+                android:drawableRight="@drawable/button_radio_button"
+                android:paddingBottom="@dimen/layout_margin_tiny"
+                android:paddingLeft="@dimen/layout_margin_small"
+                android:paddingRight="@dimen/layout_margin_small"
+                android:paddingTop="@dimen/layout_margin_tiny"
+                android:text="微信" />
+
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/aty_telephone_fare_recharge_text_play"
+            style="@style/submitText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_small"
+            android:text="立即支付" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

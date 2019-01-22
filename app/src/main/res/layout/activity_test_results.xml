@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/aty_test_results_layout_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_bottom_line_gray20"
+    android:gravity="center_horizontal"
+
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/aty_test_results_text_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_big"
+        android:gravity="center"
+        android:textColor="@color/gray50"
+        android:textSize="@dimen/text_size_small" />
+
+
+    <LinearLayout
+        android:id="@+id/aty_test_results_layout_result_layout"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_tiny"
+        android:background="@color/gray10"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/layout_margin_small"
+        android:paddingLeft="@dimen/layout_margin_tiny"
+        android:paddingRight="@dimen/layout_margin_tiny"
+        android:paddingTop="@dimen/layout_margin_small"
+        android:visibility="invisible">
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+            android:id="@+id/aty_test_results_vtv_subject_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/orange1"
+            android:textSize="@dimen/text_size_medium"
+            app:leftMinWidth="150dp"
+            app:leftText="总题数"
+            app:leftTextColor="@color/gray60"
+            app:leftTextSize="@dimen/text_size_medium" />
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+            android:id="@+id/aty_test_results_vtv_correct_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:gravity="right"
+            android:textColor="@color/orange1"
+            android:textSize="@dimen/text_size_medium"
+            app:leftMinWidth="150dp"
+            app:leftText="做对数"
+            app:leftTextColor="@color/gray60"
+            app:leftTextSize="@dimen/text_size_medium" />
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+            android:id="@+id/aty_test_results_vtv_error_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:gravity="right"
+            android:textColor="@color/orange1"
+            android:textSize="@dimen/text_size_medium"
+            app:leftMinWidth="150dp"
+            app:leftText="做错数"
+            app:leftTextColor="@color/gray60"
+            app:leftTextSize="@dimen/text_size_medium" />
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+            android:id="@+id/aty_test_results_vtv_correct_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:gravity="right"
+            android:textColor="@color/orange1"
+            android:textSize="@dimen/text_size_medium"
+            app:leftMinWidth="150dp"
+            app:leftText="正确率"
+            app:leftTextColor="@color/gray60"
+            app:leftTextSize="@dimen/text_size_medium" />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/layout_margin_tiny"
+        android:layout_marginRight="@dimen/layout_margin_tiny"
+        android:layout_marginTop="@dimen/layout_margin_large"
+        android:background="@color/gray20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin_tiny"
+        android:layout_marginRight="@dimen/layout_margin_tiny"
+        android:orientation="horizontal">
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/layout_margin_small"
+            android:layout_marginTop="@dimen/layout_margin_small"
+            android:background="@color/gray20" />
+
+        <TextView
+            android:id="@+id/aty_test_results_text_check_error_subject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_onclick"
+            android:gravity="center"
+            android:paddingBottom="@dimen/layout_margin_tiny"
+            android:paddingTop="@dimen/layout_margin_tiny"
+            android:text="查看错题"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/aty_test_results_text_check_reexamination"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_onclick"
+            android:gravity="center"
+            android:paddingBottom="@dimen/layout_margin_tiny"
+            android:paddingTop="@dimen/layout_margin_tiny"
+            android:text="重新考试"
+            android:textSize="@dimen/text_size_medium" />
+
+    </LinearLayout>
+
+</LinearLayout>

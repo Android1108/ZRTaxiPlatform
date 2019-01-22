@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_index_swl_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="@drawable/card_bg"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/layout_margin">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/layout_margin_big_big"
+                        >
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/layout_margin_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/layout_margin_mini"
+                                android:text="我的司机卡"
+                                android:textColor="@color/black90"
+                                android:textSize="@dimen/text_size_medium" />
+
+                            <TextView
+                                android:id="@+id/fragment_index_text_license_plate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="尚未绑定"
+                                android:textStyle="bold"
+                                android:textColor="@color/black90"
+                                android:textSize="@dimen/text_size_big_big" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginRight="@dimen/layout_margin_tiny"
+                            >
+                            <TextView
+                                android:id="@+id/fragment_index_text_state"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/layout_margin_mini"
+                                android:text="休息中"
+                                android:layout_gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_medium" />
+                          <TextView
+                              android:id="@+id/fragment_index_text_punch_the_clock"
+                              android:layout_width="@dimen/value_text_width"
+                              android:layout_gravity="right"
+                              android:layout_height="@dimen/layout_margin_big"
+                              android:background="@drawable/btn_nor"
+                              />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                        <!--<TextView-->
+                            <!--android:id="@+id/fragment_index_text_collection_bill"-->
+                            <!--style="@style/indexFragment_menu_text"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:drawablePadding="@dimen/layout_margin"-->
+                            <!--android:drawableTop="@drawable/ic_bill"-->
+                            <!--android:text="账单"-->
+                            <!--android:textColor="@color/white" />-->
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginRight="@dimen/layout_margin"
+                    android:background="@color/white"
+                    >
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/layout_margin"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/fragment_index_text_collection_payment"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_blue"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:src="@drawable/icon_ma"
+                            android:layout_gravity="left|center"
+                            android:layout_weight="3"
+                            />
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收付款"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_size_big"
+                            android:textColor="@color/white"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/fragment_index_text_wealth"
+                        android:orientation="horizontal"
+                        android:background="#ffa800"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:src="@drawable/icon_qian"
+                            android:layout_gravity="left|center"
+                            android:layout_weight="3"
+                            />
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="T币"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_size_big"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/layout_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/layout_margin"
+                    android:paddingTop="@dimen/layout_margin">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_margin_tiny"
+                        android:src="@drawable/ic_horn" />
+                    <org.wzeiri.zr.zrtaxiplatform.widget.AutoVerticalScrollTextView
+                        android:id="@+id/fragment_index_avst_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_margin_mini"></org.wzeiri.zr.zrtaxiplatform.widget.AutoVerticalScrollTextView>
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/layout_margin"
+                    android:paddingTop="@dimen/layout_margin_tiny">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/fragment_index_rv_menu_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal" />
+                </FrameLayout>
+
+
+                <ImageView
+                    android:id="@+id/fragment_index_carousel_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_margin_small"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+            <!-- 显示网络异常提示 -->
+            <TextView
+                android:id="@+id/fragment_index_text_load_data_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_mini"
+                android:background="@color/black70"
+                android:drawableLeft="@drawable/ic_wifi"
+                android:drawablePadding="@dimen/layout_margin"
+                android:drawableRight="@drawable/ic_arrow_right_white"
+                android:paddingBottom="@dimen/layout_margin"
+                android:paddingLeft="@dimen/layout_margin_tiny"
+                android:paddingRight="@dimen/layout_margin_tiny"
+                android:paddingTop="@dimen/layout_margin"
+                android:text="网络请求失败，请检查您的网络设置"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

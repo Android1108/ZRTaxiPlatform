@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+
+<EditText
+    android:id="@+id/aty_opinion_feedback_edit_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="top"
+    android:hint="请输入您的反馈意见，我们会为您不断提升"
+    android:lines="10"
+    android:padding="@dimen/layout_margin"
+    android:textColor="@color/black70"
+    android:textSize="@dimen/text_size_small" />
+
+<TextView
+    android:id="@+id/aty_opinion_feedback_text_submit"
+    style="@style/submitText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/layout_margin_small"
+    android:text="提交" />
+
+
+</LinearLayout>

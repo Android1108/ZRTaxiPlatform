@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_notification_date_text_day"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:padding="@dimen/layout_margin"
+    android:textColor="@color/gray40"
+    android:textSize="@dimen/text_size_small">
+
+</TextView>

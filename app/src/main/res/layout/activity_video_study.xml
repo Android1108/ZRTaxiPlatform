@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <SurfaceView
+        android:id="@+id/aty_video_study_sv_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/aty_video_study_image_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+    <ImageView
+        android:id="@+id/aty_video_study_image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin_small"
+        android:background="@drawable/bg_circular_black30"
+        android:padding="@dimen/layout_margin_small"
+        android:src="@drawable/ic_gray_back"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/aty_video_study_layout_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin"
+        android:visibility="gone">
+
+
+        <ImageView
+
+            android:id="@+id/aty_video_study_image_play_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/layout_margin"
+            android:padding="@dimen/layout_margin"
+            android:src="@drawable/ic_video_play" />
+
+        <TextView
+            android:id="@+id/aty_video_study_text_play_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_marginRight="@dimen/layout_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+        <ProgressBar
+
+            android:id="@+id/aty_video_study_pb_play_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/aty_video_study_text_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

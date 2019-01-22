@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/layout_margin_small"
+        android:drawableTop="@drawable/ic_video_pause_prompt"
+        android:gravity="center"
+        android:text="亲，您还在看嘛吗"
+        android:textColor="@color/gray65"
+        android:textSize="@dimen/text_size_big" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/layout_margin_medium"
+        android:background="@color/gray20" />
+
+    <TextView
+        android:id="@id/dialog_positive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_onclick"
+        android:gravity="center"
+        android:paddingBottom="@dimen/layout_margin_small"
+        android:paddingTop="@dimen/layout_margin_small"
+        android:text="是，继续观看"
+        android:textColor="@color/orange1"
+        android:textSize="@dimen/text_size_large" />
+
+</LinearLayout>

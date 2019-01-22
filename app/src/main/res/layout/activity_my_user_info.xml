@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_bottom_line_gray20"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/layout_margin_small"
+            app:divider="@drawable/bg_layout_line"
+            app:showDividers="middle">
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                android:id="@+id/aty_my_user_info_vtv_name"
+                style="@style/myFragment_valueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_onclick"
+                android:text="姓名"
+
+                />
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                android:id="@+id/aty_my_user_info_vtv_sex"
+                style="@style/myFragment_valueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_onclick"
+                android:text="性别" />
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                android:id="@+id/aty_my_user_info_vtv_age"
+                style="@style/myFragment_valueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_onclick"
+                android:text="年龄" />
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                android:id="@+id/aty_my_user_info_vtv_phone"
+                style="@style/myFragment_valueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_onclick"
+                android:text="手机号码" />
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                android:id="@+id/aty_my_user_info_vtv_operation_number"
+                style="@style/myFragment_valueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_onclick"
+                android:text="营运证号"
+                android:visibility="gone" />
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                android:id="@+id/aty_my_user_info_vtv_taxi_company"
+                style="@style/myFragment_valueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_onclick"
+                android:text="出租车公司" />
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                android:id="@+id/aty_my_user_info_vtv_city"
+                style="@style/myFragment_valueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_onclick"
+                android:drawablePadding="@dimen/layout_margin"
+                android:drawableRight="@drawable/ic_arrow_right_gray"
+                android:text="城市" />
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+                android:id="@+id/aty_my_user_info_vtv_address"
+                style="@style/myFragment_valueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_onclick"
+                android:drawablePadding="@dimen/layout_margin"
+                android:drawableRight="@drawable/ic_arrow_right_gray"
+                android:text="地址" />
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/aty_my_user_info_text_login_out"
+            style="@style/submitText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_tiny"
+            android:text="退出登录" />
+    </LinearLayout>
+
+</ScrollView>

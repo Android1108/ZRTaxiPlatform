@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/fragment_taxi_layout_bind_srl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:divider="@color/gray10"
+            android:scrollbars="none"
+            android:id="@+id/fragment_taxi_layout_bind_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_taxi_layout_bind_new_taxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/fragment_taxi_layout_bind_list"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_white_top_bottom_line_gray20"
+        android:paddingBottom="@dimen/layout_margin_small"
+        android:paddingTop="@dimen/layout_margin_small">
+
+        <TextView
+            android:id="@+id/fragment_taxi_text_bind_new_taxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_add_taxi"
+            android:drawablePadding="@dimen/layout_margin"
+            android:gravity="center"
+            android:text="绑定新出租车"
+            android:textColor="@color/black70"
+            android:textSize="@dimen/text_size_small"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="379dp" />
+    </FrameLayout>
+
+</LinearLayout>
+

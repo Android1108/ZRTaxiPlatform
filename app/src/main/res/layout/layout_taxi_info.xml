@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_onclick"
+    android:paddingBottom="@dimen/layout_margin"
+    android:paddingLeft="@dimen/layout_margin"
+    android:paddingTop="@dimen/layout_margin">
+
+
+    <ImageView
+        android:id="@+id/layout_taxi_info_image_car_logo"
+        android:layout_width="@dimen/image_size_little"
+        android:layout_height="@dimen/image_size_little"
+        android:layout_marginRight="@dimen/layout_margin"/>
+
+
+    <TextView
+        android:id="@+id/layout_taxi_info_text_license_plate_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/layout_taxi_info_image_car_logo"
+        android:textColor="@color/black70"
+        android:textSize="@dimen/text_size_large" />
+
+    <TextView
+        android:id="@+id/layout_taxi_info_text_car_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_taxi_info_text_license_plate_number"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:layout_marginTop="@dimen/layout_margin_mini"
+        android:layout_toRightOf="@id/layout_taxi_info_image_car_logo"
+        android:background="@drawable/bg_transparent_bottom_line_gray20"
+        android:paddingBottom="@dimen/layout_margin_mini"
+        android:textColor="@color/black60"
+        android:textSize="@dimen/text_size_small" />
+
+
+    <TextView
+        android:id="@+id/layout_taxi_info_text_taxi_audit_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/layout_taxi_info_text_car_model"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:layout_marginTop="@dimen/layout_margin_mini"
+        android:textColor="@color/orange1"
+        android:textSize="@dimen/text_size_small" />
+
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+        android:id="@+id/layout_taxi_info_vtv_taxi_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_taxi_info_text_car_model"
+        android:layout_marginTop="@dimen/layout_margin_mini"
+        android:layout_toLeftOf="@id/layout_taxi_info_text_taxi_audit_status"
+        android:layout_toRightOf="@id/layout_taxi_info_image_car_logo"
+        android:ellipsize="end"
+        android:textColor="@color/black60"
+        android:textSize="@dimen/text_size_small"
+        app:rightTextColor="@color/orange1"
+        app:rightTextSize="@dimen/text_size_small" />
+
+
+    <TextView
+        android:id="@+id/layout_taxi_info_text_current_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_left_fillet_rectangle_orange"
+        android:paddingBottom="@dimen/layout_margin_mini"
+        android:paddingLeft="@dimen/layout_margin_small"
+        android:paddingRight="@dimen/layout_margin"
+        android:paddingTop="@dimen/layout_margin_mini"
+        android:text="当前车辆"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_little"
+        android:visibility="gone" />
+</RelativeLayout>

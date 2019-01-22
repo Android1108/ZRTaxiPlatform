@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_version_update_layout_content"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="63dp"
+            android:background="@drawable/bg_fillet_rectangle_white"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-63dp"
+                android:src="@drawable/bg_version_update" />
+
+            <TextView
+                android:id="@id/dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:layout_marginLeft="@dimen/layout_margin_medium"
+                android:layout_marginRight="@dimen/layout_margin_medium"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:textColor="@color/black70"
+                android:textSize="@dimen/text_size_medium" />
+
+            <ScrollView
+                android:id="@+id/dialog_version_update_layout_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_medium"
+                android:layout_marginRight="@dimen/layout_margin_medium"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@id/dialog_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layout_margin"
+                        android:textColor="@color/gray40"
+                        android:textSize="@dimen/text_size_medium" />
+                </LinearLayout>
+            </ScrollView>
+
+
+            <TextView
+                android:id="@id/dialog_positive"
+                style="@style/submitText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:layout_marginLeft="@dimen/layout_margin_medium"
+                android:layout_marginRight="@dimen/layout_margin_medium"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:background="@drawable/bg_circular_orange"
+                android:text="立即更新" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@id/dialog_negative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_close_update" />
+
+    </LinearLayout>
+
+</FrameLayout>

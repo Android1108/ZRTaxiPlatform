@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.wheelpicker.WheelHourPicker
+        android:id="@+id/view_wheel_time_hour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text=":"
+        android:textColor="@color/black70"
+        android:textSize="@dimen/text_size_medium" />
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.wheelpicker.WheelMinutePicker
+        android:id="@+id/view_wheel_time_minute"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="65dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/item_fragment_function_menu_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/layout_margin_tiny_mini"
+        android:textColor="@color/black90"
+        android:textSize="@dimen/text_size_small" />
+
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/layout_margin"
+        android:paddingRight="@dimen/layout_margin"
+        app:divider="@drawable/bg_layout_line"
+        app:showDividers="middle">
+
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.ValueEditText
+            android:id="@+id/aty_driver_authentication_vet_full_name"
+            style="@style/valueEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/please_input"
+            app:leftMinWidth="@dimen/value_text_width"
+            app:leftText="真实姓名" />
+
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+            android:id="@+id/aty_driver_authentication_vtv_taxi_company"
+            style="@style/valueEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableRight="@drawable/ic_arrow_right_gray"
+            android:hint="@string/please_select"
+            app:leftMinWidth="@dimen/value_text_width"
+            app:leftText="出租车公司" />
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.ValueEditText
+            android:id="@+id/aty_driver_authentication_vet_qualification_certificate"
+            style="@style/valueEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/please_input"
+            app:leftMinWidth="@dimen/value_text_width"
+            app:leftText="从业资格证" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/layout_margin"
+            android:paddingTop="@dimen/layout_margin">
+
+            <TextView
+                style="@style/editText"
+                android:layout_width="@dimen/value_text_width"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/layout_margin_tiny"
+                android:text="从业资格证" />
+
+
+            <ImageView
+                android:id="@+id/aty_driver_authentication_image_qualification_certificate"
+                android:layout_width="@dimen/image_size_medium"
+                android:layout_height="@dimen/image_size_little"
+                android:src="@drawable/ic_certificates" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/layout_margin_tiny"
+            android:paddingRight="@dimen/layout_margin_tiny"
+            android:paddingTop="@dimen/layout_margin_tiny">
+
+            <TextView
+                android:layout_width="@dimen/value_text_width"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/layout_margin_tiny"
+                android:text="车牌号"
+                android:textColor="@color/black70"
+                android:textSize="@dimen/text_size_medium" />
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueEditText
+                android:id="@+id/aty_vehicle_authentication_ved_car_number"
+                style="@style/valueEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:background="@null"
+                android:hint="请填写车牌号"
+                android:padding="0dp"
+                app:leftMinWidth="0dp" />
+
+        </LinearLayout>
+
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+            android:id="@+id/aty_vehicle_authentication_vtv_brand"
+            style="@style/valueEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableRight="@drawable/ic_arrow_right_gray"
+            android:hint="@string/please_select"
+            app:leftMinWidth="@dimen/value_text_width"
+            app:leftText="品牌" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <org.wzeiri.zr.zrtaxiplatform.widget.ValueEditText
+                android:id="@+id/aty_vehicle_authentication_vet_car_models"
+                style="@style/valueEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请填写车型"
+                app:leftMinWidth="@dimen/value_text_width"
+                app:leftText="车型" />
+
+            <TextView
+                android:id="@+id/aty_vehicle_authentication_text_select_car_models"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/layout_margin_tiny"
+                android:paddingRight="@dimen/layout_margin_tiny"
+                android:text="选择"
+                android:textColor="@color/orange1"
+                android:textSize="@dimen/text_size_medium" />
+        </LinearLayout>
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+            android:id="@+id/aty_vehicle_authentication_vtv_color"
+            style="@style/valueEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableRight="@drawable/ic_arrow_right_gray"
+            android:hint="@string/please_select"
+            app:leftMinWidth="@dimen/value_text_width"
+            app:leftText="颜色" />
+
+
+        <org.wzeiri.zr.zrtaxiplatform.widget.ValueEditText
+            android:id="@+id/aty_driver_authentication_vet_taxi_license_number"
+            style="@style/valueEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/please_input"
+            android:visibility="gone"
+            app:leftMinWidth="@dimen/value_text_width"
+            app:leftText="营运证号" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/layout_margin"
+            android:paddingTop="@dimen/layout_margin">
+
+            <TextView
+                style="@style/editText"
+                android:layout_width="@dimen/value_text_width"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/layout_margin_tiny"
+                android:text="营运证" />
+
+
+            <ImageView
+                android:id="@+id/aty_driver_authentication_image_taxi_license"
+                android:layout_width="@dimen/image_size_medium"
+                android:layout_height="@dimen/image_size_little"
+                android:src="@drawable/ic_certificates" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/aty_driver_authentication_text_submit"
+            style="@style/submitText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="@dimen/layout_margin_medium"
+            android:text="提交" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+</ScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    app:divider="@drawable/bg_layout_line"
+    app:dividerPadding="@dimen/layout_margin_tiny"
+    app:showDividers="middle">
+
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.ValueTextView
+        android:id="@+id/aty_id_car_authentication_vtv_city"
+        style="@style/valueEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin_tiny"
+        android:layout_marginRight="@dimen/layout_margin_tiny"
+        android:background="@null"
+        android:drawableRight="@drawable/ic_arrow_right_gray"
+        android:hint="@string/please_select"
+        app:leftMinWidth="@dimen/value_text_width"
+        app:leftText="所在城市" />
+
+    <org.wzeiri.zr.zrtaxiplatform.widget.ValueEditText
+        android:id="@+id/aty_id_car_authentication_vet_id_card_number"
+        style="@style/valueEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin_tiny"
+        android:layout_marginRight="@dimen/layout_margin_tiny"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:background="@null"
+        android:hint="@string/please_input"
+        app:leftMinWidth="@dimen/value_text_width"
+        app:leftText="身份证号" />
+
+    <TextView
+        android:id="@+id/aty_id_aty_authentication_text_submit"
+        style="@style/submitText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_medium"
+        android:text="下一步" />
+
+</android.support.v7.widget.LinearLayoutCompat>
